@@ -21,6 +21,6 @@ class Mahasiswa extends Model
 
     public function dosen()
     {
-        return $this->hasMany(Dosen::class);
+        return $this->belongsTo(Dosen::class);
     }
 }
