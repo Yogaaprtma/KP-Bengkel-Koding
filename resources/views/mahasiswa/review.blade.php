@@ -178,6 +178,10 @@
                                 <input type="text" class="form-control" name='departemen' id="departemen" placeholder="Masukkan Score Anda">
                             </div>
                         </div>
+                        <div class="mb-3">
+                            <label for="formFileMultiple" class="form-label">Masukan File</label>
+                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                          </div>
                         <div class="d-grid gap-2 d-md-block">
                             <button class="btn btn-primary mt-5 mb-3" style="width: 100px" type="simpan">Simpan</button>
                             <button class="btn btn-danger mt-5 mb-3"style="width: 100px" type="batal">Batal</button>
