@@ -35,6 +35,7 @@ Route::get('/dashboardMahasiswa', [mahasiswaController::class, 'dashboard'])->na
 Route::get('/riwayatMahasiswa', [mahasiswaController::class, 'history'])->name('riwayat');
 Route::get('/reviewMahasiswa', [mahasiswaController::class, 'hasil'])->name('review');
 Route::get('/rejectedMahasiswa', [mahasiswaController::class, 'tolak'])->name('reject');
+Route::get('/profilMahasiswa', [mahasiswaController::class, 'bio'])->name('profile');
 
 //dosen
 Route::get('/daftarBimbingan', [dosenController::class, 'list'])->name('list_mahasiswa');

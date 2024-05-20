@@ -95,4 +95,9 @@ class mahasiswaController extends Controller
     {
         return view('mahasiswa.rejected');
     }
+
+    public function bio()
+    {
+        return view('mahasiswa.profilMhs');
+    }
 }

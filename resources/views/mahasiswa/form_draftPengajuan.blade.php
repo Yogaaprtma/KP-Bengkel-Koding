@@ -74,7 +74,7 @@
                             <input class="form-control" type="text" id="catatan" name="catatan" placeholder="Masukkan Catatan Kerja Praktek Anda" value="{{ $pengajuan->catatan }}" required>
                         </div>
                     </div>
-                    <a href="{{ route('list_mahasiswa') }}" class="btn btn-primary mt-5 mb-3 me-5" style="width: 100px">Ajukan</a>
+                    <a href="{{ route('home') }}" class="btn btn-primary mt-5 mb-3 me-5" style="width: 100px">Ajukan</a>
                     <button class="btn btn-warning mt-5 mb-3 me-5"  type="submit" style="width: 100px">Edit</button>
                 </form>
                 <form action="{{ route('hapus_pengajuan', ['pengajuan' => $pengajuan->id])}}" method="POST" class="d-inline">

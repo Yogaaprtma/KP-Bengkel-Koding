@@ -11,13 +11,13 @@
             </div>
             <ul class="sidebar-nav">
                 <li class="sidebar-item">
-                    <a href="{{ route('profile') }}" class="sidebar-link">
+                    <a href="#" class="sidebar-link">
                         <i class="lni lni-user"></i>
                         <span>Profile</span>
                     </a>
                 </li>
                 <li class="sidebar-item">
-                    <a href="#" class="sidebar-link">
+                    <a href="{{ route('home') }}" class="sidebar-link">
                         <i class="lni lni-agenda"></i>
                         <span>Task</span>
                     </a>
@@ -80,20 +80,59 @@
                 </a>
             </div>
         </aside>
-        <div class="main p-3">
-            <div class="text-left">
-                <h1 class="pt-2"><img src="{{ asset('assets/udinus.jpg') }}" alt="buttonAksi" width="60px">
-                    Bengkel Koding
-                </h1>
-                <table class="table">
-                    <tr>
-                      <th>Maaf Pengajuan anda ditolak</th>
-                    </tr>
-                  </table>
-            </div>
+    <div class="main p-3">
+        <div class="text-left">
+            <h1 class="pt-2"><img src="{{ asset('assets/udinus.jpg') }}" alt="logo" width="60px"> Bengkel Koding</h1>
         </div>
+        
+        <!-- START FORM -->
+        <div class="container mt-5">
+            <h4>Profil Mahasiswa</h4>
+            <form action='' method='post'>
+                <div class="my-3 p-3 bg-body rounded shadow-sm">
+                    <div class="row">
+                        <div class="col-sm-2 text-center">
+                            <img src="{{ asset('assets/profil.png') }}" alt="logo" width="100px">
+                        </div>
+                        <div class="col-sm-10">
+                            <div class="mb-3 row">
+                                <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name='nama' id="nama">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="posisi" class="col-sm-2 col-form-label">NIM</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name='posisi' id="posisi">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="program" class="col-sm-2 col-form-label">Program Studi</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name='departemen' id="departemen">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="wali" class="col-sm-2 col-form-label">Dosen Wali</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name='wali' id="wali">
+                                </div>
+                            </div>
+                            <div class="mb-3 row">
+                                <label for="status" class="col-sm-2 col-form-label">Status</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" name='status' id="status">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- AKHIR FORM -->
+
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-    <script src="{{ asset('js1/script.js') }}"></script>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+<script src="{{ asset('js1/script.js') }}"></script>
