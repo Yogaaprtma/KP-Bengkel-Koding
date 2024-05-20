@@ -90,7 +90,7 @@
                 </h2>
             </div>
             <table id="customers">
-                {{-- <form class="row g-3 justify-content-end">
+                <form class="row g-3 justify-content-end">
                     <div class="col-auto me-3">
                         <div class="input-group">
                             <input class="mb-2 form-control" type="text" name="search" id="search" placeholder="Search..." style="height: 100%">
@@ -99,15 +99,29 @@
                             </div>
                         </div>
                     </div>
-                </form> --}}
-                <tr>
-                  <th>No</th>
-                  <th>NIM</th>
-                  <th>Nama Mahasiswa</th>
-                  <th>Rincian</th>
-                  <th>Status</th>
-                </tr>
-            
+                </form>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>NIM</th>
+                        <th>Nama Mahasiswa</th>
+                        {{-- <th>Rincian</th> --}}
+                        <th>Status</th>
+                      </tr>
+                </thead>
+                <tbody>
+                    @foreach($pengajuans as $pengajuan)
+                        <tr>
+                            <td>{{ $loop->iteration }}</td>
+                            <td>{{ $pengajuan->mahasiswa->nim }}</td>
+                            <td>{{ $pengajuan->mahasiswa->nama }}</td>
+                            {{-- <td>
+                                <a href="{{ route('rincian_pengajuan', ['pengajuan' => $pengajuan->id]) }}" class="btn btn-primary">Detail</a>
+                            </td> --}}
+                            <td class="mt-2 rounded text-center" style="display: inline-block; width: auto; @if($pengajuan->status == 'Diterima') background-color: #28a745; color: white; @elseif($pengajuan->status == 'Ditolak') background-color: #dc3545; color: white; @endif">{{ $pengajuan->status ?? 'Belum Diproses' }}</td>
+                        </tr>
+                    @endforeach
+                </tbody>
               </table>
 
         </div>
