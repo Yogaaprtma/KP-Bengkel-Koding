@@ -17,7 +17,7 @@
                         <label for="judul" class="form-label">Judul</label>
                     </div>
                     <div class="col-10">
-                        <input class="form-control" type="text" id="judul" name="judul" placeholder="Masukkan Judul Kerja Praktek Anda" value="{{ $pengajuan->judul }}" required>
+                        <input class="form-control" type="text" id="judul" name="judul" placeholder="Masukkan Judul Kerja Praktek Anda" value="{{ $pengajuan->judul }}" required disabled>
                     </div>
                 </div>
                 <div class="row mt-4">
@@ -25,7 +25,7 @@
                         <label for="perusahaan" class="form-label">Perusahaan</label>
                     </div>
                     <div class="col-10">
-                        <input class="form-control" type="text" id="perusahaan" name="perusahaan" placeholder="Masukkan Perusahaan Kerja Praktek Anda" value="{{ $pengajuan->perusahaan }}" required>
+                        <input class="form-control" type="text" id="perusahaan" name="perusahaan" placeholder="Masukkan Perusahaan Kerja Praktek Anda" value="{{ $pengajuan->perusahaan }}" required disabled>
                     </div>
                 </div>
                 <div class="row mt-4">
@@ -33,7 +33,7 @@
                         <label for="posisi" class="form-label">Posisi</label>
                     </div>
                     <div class="col-10">
-                        <input class="form-control" type="text" id="posisi" name="posisi" placeholder="Masukkan Posisi Kerja Praktek Anda" value="{{ $pengajuan->posisi }}" required>
+                        <input class="form-control" type="text" id="posisi" name="posisi" placeholder="Masukkan Posisi Kerja Praktek Anda" value="{{ $pengajuan->posisi }}" required disabled>
                     </div>
                 </div>
                 <div class="row mt-4">
@@ -41,7 +41,7 @@
                         <label for="posisi" class="form-label">Bidang Kajian</label>
                     </div>
                     <div class="col-10">
-                        <input class="form-control" type="text" id="posisi" name="posisi" placeholder="Masukkan Bidang Kajian Kerja Praktek Anda" value="{{ $pengajuan->bidang_kajian }}" required>
+                        <input class="form-control" type="text" id="posisi" name="posisi" placeholder="Masukkan Bidang Kajian Kerja Praktek Anda" value="{{ $pengajuan->bidang_kajian }}" required disabled>
                     </div>
                 </div>
                 <div class="row mt-4">
@@ -49,7 +49,7 @@
                         <label for="keyword" class="form-label">Keyword</label>
                     </div>
                     <div class="col-10">
-                        <input class="form-control" type="text" id="keyword" name="keyword" placeholder="Masukkan Keyword Kerja Praktek Anda" value="{{ $pengajuan->keyword }}" required>
+                        <input class="form-control" type="text" id="keyword" name="keyword" placeholder="Masukkan Keyword Kerja Praktek Anda" value="{{ $pengajuan->keyword }}" required disabled>
                     </div>
                 </div>
                 <div class="row mt-4">
@@ -57,7 +57,7 @@
                         <label for="deskripsi" class="form-label">Deskripsi</label>
                     </div>
                     <div class="col-10">
-                        <textarea class="form-control" name="deskripsi" id="deskripsi" cols="30" rows="6" placeholder="Masukkan Deskripsi Kerja Praktek Anda" required>{{ $pengajuan->deskripsi }}</textarea>
+                        <textarea class="form-control" name="deskripsi" id="deskripsi" cols="30" rows="6" placeholder="Masukkan Deskripsi Kerja Praktek Anda" required disabled>{{ $pengajuan->deskripsi }}</textarea>
                     </div>
                 </div>
                 <div class="row mt-4 mb-5">
@@ -65,7 +65,7 @@
                         <label for="catatan" class="form-label">Catatan</label>
                     </div>
                     <div class="col-10">
-                        <input class="form-control" type="text" id="catatan" name="catatan" placeholder="Masukkan Catatan Kerja Praktek Anda" value="{{ $pengajuan->catatan }}" required>
+                        <input class="form-control" type="text" id="catatan" name="catatan" placeholder="Masukkan Catatan Kerja Praktek Anda" value="{{ $pengajuan->catatan }}" required disabled>
                     </div>
                 </div>
             </form>
