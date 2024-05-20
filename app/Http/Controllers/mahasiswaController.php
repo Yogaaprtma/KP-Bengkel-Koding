@@ -70,7 +70,7 @@ class mahasiswaController extends Controller
         $pengajuan = Pengajuan::findOrFail($id);
 
         // $pengajuan->update(['status' => 'Disetujui']);
-    
+
         return redirect()->route('list_mahasiswa')->with('success', 'Pengajuan berhasil diajukan.');
     }
 
