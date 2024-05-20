@@ -32,5 +32,12 @@ class dosenController extends Controller
         $pengajuan->save();
 
         return redirect()->route('list_mahasiswa')->with('error', 'Pengajuan ditolak.');
+        //return redirect()->route('halaman_alasan')->with('error', 'Pengajuan ditolak.');
+    }
+
+    public function reason(Request $request, Pengajuan $pengajuan)
+    {
+        $pengajuan->status = 'Ditolak';
+        return view('dosen.alasan');
     }
 }

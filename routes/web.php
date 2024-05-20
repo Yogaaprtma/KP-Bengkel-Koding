@@ -42,6 +42,7 @@ Route::get('/daftarBimbingan', [dosenController::class, 'list'])->name('list_mah
 Route::get('/rincianDocument/{pengajuan}', [dosenController::class, 'rinci'])->name('rincian_pengajuan');
 Route::post('/terimaPengajuan/{pengajuan}', [dosenController::class, 'terima'])->name('terima_pengajuan');
 Route::post('/tolakPengajuan/{pengajuan}', [dosenController::class, 'tolak'])->name('tolak_pengajuan');
+Route::get('/HalamanAlasan', [dosenController::class, 'reason'])->name('halaman_alasan');
 
 //admin
 Route::get('/halaman-admin-bimbingan', [adminController::class, 'mhsBimbingan']);

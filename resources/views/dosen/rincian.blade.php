@@ -78,8 +78,10 @@
                 </div>
                 <div class="col">
                     <form action="{{ route('tolak_pengajuan', ['pengajuan' => $pengajuan->id]) }}" method="POST">
+                    {{-- <form action="{{ route('halaman_alasan', ['pengajuan' => $pengajuan->id]) }}" method="POST"> --}}
                         @csrf
-                        <button type="submit" class="btn btn-danger mt-5 mb-3" style="width: 100px">Tolak</button>
+                        {{-- <button type="submit" class="btn btn-danger mt-5 mb-3" style="width: 100px">Tolak</button> --}}
+                        <a href="{{ route('halaman_alasan') }}" class="btn btn-danger mt-5 mb-3" style="width: 100px">Tolak</a>
                     </form>
                 </div>
             </div>  
