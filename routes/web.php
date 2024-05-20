@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\adminController;
 use App\Http\Controllers\dosenController;
 use App\Http\Controllers\MahasiswaController;
+use App\Http\Controllers\loginController;
 use App\Http\Controllers\kerjaPraktekController;
 
 /*
@@ -46,4 +47,7 @@ Route::get('/HalamanAlasan', [dosenController::class, 'reason'])->name('halaman_
 
 //admin
 Route::get('/halaman-admin-bimbingan', [adminController::class, 'mhsBimbingan']);
+
+//login
+Route::get('/login', [loginController::class, 'login']);
 
